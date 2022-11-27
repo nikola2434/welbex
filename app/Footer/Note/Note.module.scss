@@ -1,0 +1,25 @@
+@import "../../../styles/app.module.scss";
+.note {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: block;
+  text-align: end;
+
+  .copyright {
+    @include get-text($font-family-montserrat, 400, 12px);
+  }
+  > a {
+    @include get-text($font-family-montserrat, 400, 12px);
+    text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 700px) {
+  .note {
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../../styles/app.module.scss";
+.contacts_footer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  .title {
+    @include get-text($font-family-inter, 700, 14px, #656566);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .phone {
+    @include get-text($font-family-inter, 500, 16px);
+    margin-bottom: 20px;
+  }
+  .social_network {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .image {
+      margin-left: 13px;
+    }
+  }
+  .address {
+    text-align: end;
+    @include get-text($font-family-inter, 400, 16px);
+  }
+}
+
+@media (max-width: 725px) {
+  .contacts_footer {
+    margin-top: 30px;
+    align-items: flex-start;
+    .address {
+      text-align: start;
+      font-size: 14px;
+    }
+    .title {
+      font-size: 12px;
+    }
+    .phone {
+      margin-bottom: 11px;
+    }
+    .social_network {
+      margin-bottom: 12px;
+      .image {
+        margin-left: 0px;
+        margin-right: 13px;
+      }
+    }
+  }
+}

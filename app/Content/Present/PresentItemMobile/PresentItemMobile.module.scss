@@ -1,0 +1,22 @@
+@import "../../../../styles/app.module.scss";
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .line {
+    width: 10px;
+    content: "";
+    background: linear-gradient(rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+    height: 1px;
+    margin-right: 5px;
+  }
+  .title {
+    @include get-text($font-family-montserrat, 400, 13px);
+    text-transform: uppercase;
+    width: 100px;
+    white-space: nowrap;
+  }
+}
+
+

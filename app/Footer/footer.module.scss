@@ -1,0 +1,68 @@
+@import "../../styles/app.module.scss";
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 125px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  .container_menu {
+    display: flex;
+    align-items: flex-start;
+
+    > div:first-child {
+      margin-right: 100px;
+    }
+    > div:last-child {
+      margin-top: 18px;
+      margin-left: 50px;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    .container_menu {
+      > div:first-child {
+        margin-right: 0px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding-top: 40px;
+    background-color: #1e1e1e;
+    display: block;
+    margin-top: 0px;
+    .container_menu {
+      width: 100%;
+
+      flex-wrap: wrap;
+      > div:last-child {
+        margin-left: 40px;
+        margin-top: 15px;
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .footer {
+    .container_menu {
+      > div:first-child {
+        margin-right: 300px;
+        width: 250px;
+        margin-bottom: 30px;
+      }
+      > div:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

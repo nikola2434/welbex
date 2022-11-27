@@ -1,0 +1,25 @@
+@import "../../../styles/app.module.scss";
+.contacts {
+  display: flex;
+  align-items: center;
+  .phone {
+    margin-right: 50px;
+    font-family: $font-family-inter;
+    color: $main_color;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $width-tablet) {
+  .contacts {
+    .phone {
+      display: none;
+    }
+  }
+}
+@media (max-width: 880px) {
+  .contacts {
+    display: none;
+  }
+}

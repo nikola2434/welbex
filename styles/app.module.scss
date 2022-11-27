@@ -1,0 +1,12 @@
+$main_color: #e4e5ea;
+$font-family-inter: "Inter", sans-serif;
+$font-family-montserrat: "Montserrat", sans-serif;
+$width-tablet: 1050px;
+$width-phone: 480px;
+
+@mixin get-text($font-family, $weight, $size, $color: #e4e5ea) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}

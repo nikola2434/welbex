@@ -1,0 +1,26 @@
+@import "../../styles/app.module.scss";
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  align-items: flex-start;
+  z-index: 20;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 750px) {
+  .content {
+    margin-top: 0px;
+    padding-top: 40px;
+
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    height: 445px;
+    display: block;
+    background: url("../../public/noise.png") center no-repeat;
+    background-size: cover;
+    z-index: 20;
+  }
+}

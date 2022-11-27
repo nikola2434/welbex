@@ -1,0 +1,21 @@
+@import "../../styles/app.module.scss";
+.error {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    @include get-text($font-family-inter, 900, 56px);
+    padding-right: 20px;
+    border-right: 2px solid #ff3f78;
+  }
+  .title {
+    @include get-text($font-family-inter, 500, 30px);
+    margin-left: 20px;
+  }
+}

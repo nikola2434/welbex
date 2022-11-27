@@ -1,0 +1,53 @@
+@import "../../../styles/app.module.scss";
+
+.present {
+  display: block;
+  justify-content: flex-end;
+  max-width: 360px;
+  .title {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    @include get-text($font-family-inter, 500, 18px);
+    .gradient {
+      text-transform: uppercase;
+      background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+        #e4e5ea;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: flex-end;
+  }
+
+  .container_button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 700px) {
+  .present {
+    margin-top: 45px;
+    .title {
+      justify-content: flex-start;
+    }
+    .container {
+      justify-content: flex-start;
+      margin-top: 20px;
+      max-width: 270px;
+    }
+    .container_button {
+      display: none;
+    }
+  }
+}

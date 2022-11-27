@@ -1,0 +1,32 @@
+@import "../../../styles/app.module.scss";
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  z-index: 2;
+}
+@media (max-width: 725px) {
+  .navigation {
+    justify-content: space-between;
+    margin-left: 0px;
+    width: 100%;
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: $width-phone) {
+  .navigation {
+    padding: 20px 0px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    > div:last-child {
+      padding-right: 0px;
+      display: none;
+    }
+    > div:first-child {
+      padding-left: 0px;
+    }
+  }
+}

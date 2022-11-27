@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+
+    justify-content: center;
+    .container {
+      width: 100%;
+    }
+  }
+}

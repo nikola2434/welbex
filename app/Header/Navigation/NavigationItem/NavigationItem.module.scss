@@ -1,0 +1,22 @@
+@import "../../../../styles/app.module.scss";
+.nav {
+  margin-right: 30px;
+  font-family: $font-family-inter;
+  font-size: 16px;
+  color: $main_color;
+}
+@media (max-width: 725px) {
+  .nav {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: $width-phone) {
+  .nav {
+    text-transform: uppercase;
+    margin-right: 0px;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

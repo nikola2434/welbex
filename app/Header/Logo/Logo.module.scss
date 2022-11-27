@@ -1,0 +1,28 @@
+@import "../../../styles/app.module.scss";
+
+.logo {
+  width: 140px;
+  display: block;
+  z-index: 2;
+  min-width: 140px;
+
+  .image_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .description {
+    color: $main_color;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    font-family: $font-family-montserrat;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 725px) {
+  .logo {
+    display: none;
+  }
+}
